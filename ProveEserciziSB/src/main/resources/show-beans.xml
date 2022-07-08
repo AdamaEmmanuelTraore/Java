@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="guitar1" class="ifts.example.show.Guitar"> <!--QUI CREO LA MIA SCATOLA DI FAGIOLI CREANDO UN ID E UNA CLASS(corrisponde alla classe creata)-->
+<property name="sound" value="ding dong dang" /> <!--QUI CREO UNA PROPRIETA DELLA CLASSE GUITAR(ossia sound)-->
+</bean>
+
+<bean id="guitar2" class="ifts.example.show.Guitar">
+<property name="sound" value="fiuuuuuuuuu"></property>
+</bean>
+
+<bean id="Partista" class="ifts.example.show.Musician"> <!--STESSA COSA DI PRIMA-->
+<constructor-arg value="Adama" />
+<constructor-arg ref="guitar1" />
+</bean>
+
+<bean id="Sartista" class="ifts.example.show.Musician">
+<constructor-arg value="Jimmy" />
+<constructor-arg ref="guitar2" />
+</bean>
+</beans>

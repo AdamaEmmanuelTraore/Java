@@ -48,8 +48,8 @@ public class Fornitore {
 
 	@Override
 	public String toString() {
-		return "Fornitore [CODICEFORNITORE = " + CodiceFornitore + ", NOME = " + Nome + ", INDIRIZZO = " + Indirizzo
-				+ ", CITTA = " + Citta + "]";
+		return "Fornitore [CODICE FORNITORE = " + CodiceFornitore + ", NOME = " + Nome + ", INDIRIZZO = " + Indirizzo
+				+ ", CITTA' = " + Citta + "]";
 	}
 	
 	

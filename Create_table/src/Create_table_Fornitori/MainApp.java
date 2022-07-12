@@ -55,29 +55,34 @@ public class MainApp {
 			System.out.println("La tabella non è stata creata");
 			return;
 		}
-		System.out.println("Tabella creata con successo");	*/
+		System.out.println("Tabella creata con successo");		*/
 		
-		
+// STEP 4: AGGIUNGO LE TUPLE DI OGNI RECORD
 		DaoFornitori dao = new DaoFornitori();
-		Fornitore forn1, forn2, forn3 = null;		
-// PER AGGIUNGERE UN NUOVO FORNITORE
+		Fornitore forn1, forn2, forn3, forn4, forn5, forn6 = null;		
+/* PER AGGIUNGERE UN NUOVO FORNITORE
 		forn1 = new Fornitore(1, "Paolo", "via Milano", "Milano");
 		dao.insertFornitore(forn1, 1);
-		
 		forn2 = new Fornitore(2, "Rosa", "via Torino", "Torino");
 		dao.insertFornitore(forn2, 2);
-		
 		forn3 = new Fornitore(3, "Sara", "via Roma", "Roma");
 		dao.insertFornitore(forn3, 3);
+		forn4 = new Fornitore(4, "Pietro", "via Napoli", "Napoli");
+		dao.insertFornitore(forn4, 4);
+		forn5 = new Fornitore(5, "Ares", "via Firenze", "Firenze");
+		dao.insertFornitore(forn5, 5);
+		forn6 = new Fornitore(6, "Chiara", "via Sardegna", "Sardegna");
+		dao.insertFornitore(forn6, 6);
+		System.out.println("Dati aggiunti con successo");		*/
+		
 /* PER AVERE TUTTI I PRODOTTI
 		List<Fornitore> Fornitori = dao.getFornitori();
 		for(Fornitore f: Fornitori) {
 			System.out.println(f.toString());	
 		}	*/
-/* PER VISUALIZZARE UN SINGOLO PRODOTTO
-		Fornitore f = dao.getFornitore(4);
-		System.out.println(f.toString());	*/
 		
+/* PER VISUALIZZARE UN SINGOLO PRODOTTO
+		Fornitore f = dao.getFornitore(6);
+		System.out.println(f.toString());	*/
 	}
-
 }
